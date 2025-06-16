@@ -1,0 +1,16 @@
+[project]
+name = "login-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncio>=3.4.3",
+    "crewai>=0.130.0",
+    "crewai-tools>=0.47.1",
+    "dotenv>=0.9.9",
+    "ipykernel>=6.29.5",
+    "langchain-google-genai>=2.1.5",
+    "playwright>=1.52.0",
+    "python-dotenv>=1.1.0",
+]
