@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Debug: Check if API key is loaded
 api_key = os.getenv("GEMINI_API_KEY")
 print(f"Gemini API Key loaded: {'Yes' if api_key else 'No'}")
 if api_key:
@@ -14,7 +13,6 @@ if api_key:
 playwright_login_tool = PlaywrightLoginTool()
 
 try:
-    # Use CrewAI's native LLM class instead of LangChain
     gemini_llm = LLM(
         model="gemini/gemini-1.5-flash",
         api_key=api_key,
